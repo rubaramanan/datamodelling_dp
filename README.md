@@ -29,6 +29,6 @@ docker-compose -f docker-compose-airflow.yaml up -d
 
 ## Start schema data model
 
-[startschema1](https://github.com/rubaramanan/datamodelling_dp/blob/main/Annotation%202024-08-15%20004657.png)
+![startschema1](https://github.com/rubaramanan/datamodelling_dp/blob/main/Annotation%202024-08-15%20004657.png)
 
-[starschema2](https://github.com/rubaramanan/datamodelling_dp/blob/main/Annotation%202024-08-15%200046571.png)
+![starschema2](https://github.com/rubaramanan/datamodelling_dp/blob/main/Annotation%202024-08-15%200046571.png)
