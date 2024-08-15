@@ -1,0 +1,6 @@
+logs/
+plugins/
+venv/
+
+*.log
+*.tmp
