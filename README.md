@@ -26,3 +26,6 @@ docker-compose -f docker-compose-airflow.yaml up -d
 *password*: `airflow`
 
 4. Connect powerBi with db and visualize.
+
+## Start schema data model
+
