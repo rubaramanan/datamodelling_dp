@@ -1,0 +1,13 @@
+FROM apache/airflow:2.9.3
+
+WORKDIR /opt/airflow
+
+COPY requirements_airflow.txt /opt/airflow
+
+RUN pip3 install -r requirements_airflow.txt
+
+
+USER airflow
+EXPOSE 8080
+EXPOSE 8793
+EXPOSE 5555
