@@ -29,9 +29,6 @@ def get_month(month: int):
 
 
 def date_key(date: str):
-    dt = date.split('/')
-    year = dt[2]
-    day = dt[1]
-    month = dt[0]
+    dt = date.split('-')
 
-    return int(f"{year}{str(month).zfill(2)}{str(day).zfill(2)}")
+    return ''.join(dt)
