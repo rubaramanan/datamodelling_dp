@@ -57,7 +57,7 @@ def datedimension():
     def load(data):
         save_data(data, 'dimdate')
 
-    extracted_data = extract('2018-01-01', '2024-12-31')
+    extracted_data = extract('1998-01-01', '2024-12-31')
     load(extracted_data)
 
 
