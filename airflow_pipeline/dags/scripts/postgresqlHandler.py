@@ -27,8 +27,3 @@ def save_data(data, table):
 
     except Exception as e:
         print(f"An error occurred: {e}")
-    # engine = create_engine('postgresql+psycopg2://ramanan:S3cret@192.168.2.79:5433/ramanan_db')
-    #
-    # data.to_sql(table, engine, if_exists='replace', index=False)
-    #
-    # print("data stored in postgresql")
