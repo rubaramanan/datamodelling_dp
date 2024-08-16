@@ -1,5 +1,7 @@
 # datamodelling_dp
 
+![startschema1](https://github.com/rubaramanan/datamodelling_dp/blob/main/data%20programming%20architecture.png)
+
 ## Commands to setup our project
 
 1. Clone the repo
