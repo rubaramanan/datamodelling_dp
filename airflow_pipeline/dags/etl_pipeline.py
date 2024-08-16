@@ -27,8 +27,7 @@ default_args = {
 def etl():
     @task
     def extract(file: str):
-        r = requests.get('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&outputsize=full&apikey\
-               =KJQ5TCJXA0IOCIVC&datatype=csv')
+        r = requests.get('https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&outputsize=full&apikey=KJQ5TCJXA0IOCIVC&datatype=csv')
         data = r.text
 
         # Write the CSV data to a file
@@ -40,7 +39,7 @@ def etl():
     def transform(file: str):
         df = pd.read_csv(file)
         df['DateKey'] = df.apply(lambda x: date_key(x.timestamp), axis=1)
-        df.drop(['timestamp', 'date', 'time'], axis=1, inplace=True)
+        df.drop(['timestamp'], axis=1, inplace=True)
         return df
 
     @task
